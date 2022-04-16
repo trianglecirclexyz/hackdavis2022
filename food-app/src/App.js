@@ -1,5 +1,4 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from 'react'; 
 import './App.css';
 import Recipe from './components/Recipe';
 import Home from './Home';
