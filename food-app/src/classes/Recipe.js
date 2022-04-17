@@ -1,4 +1,3 @@
-
 class Recipe {
     constructor(title, description, ingredients, steps) {
       this.title = title;

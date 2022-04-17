@@ -8,20 +8,21 @@ import RecipeTile from './components/RecipeTile';
 import Home from './Home';
 import Recipe  from './classes/Recipe';
 
-const r = Recipe('chicken', 'is chicken', ['chicken'], ['cook chicken', 'done']);
-
-
 function App() {
+
+  console.log('aaas');
+  let r = Recipe('a', 'a', 'a', 'a');
+  console.log('aaas');
+
   return (
     <Router>
       <div className="App">
         <Topmenu />
-
-        <Recipe title="Salami" />
         <div className="content">
             <Switch>
               <Route path="/">
                 <Home />
+                <RecipeTile title={ r }/>
               </Route>
             </Switch>
         </div>
