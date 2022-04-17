@@ -6,14 +6,12 @@ import Topmenu from './components/Topmenu';
 import 'bootstrap/dist/css/bootstrap.css'
 import RecipeTile from './components/RecipeTile';
 import Home from './Home';
-import Recipe  from './classes/Recipe';
+import Recipe  from './classes/Recipe.js';
+
+
 
 function App() {
-
-  console.log('aaas');
-  let r = Recipe('a', 'a', 'a', 'a');
-  console.log('aaas');
-
+  
   return (
     <Router>
       <div className="App">
@@ -22,7 +20,6 @@ function App() {
             <Switch>
               <Route path="/">
                 <Home />
-                <RecipeTile title={ r }/>
               </Route>
             </Switch>
         </div>
