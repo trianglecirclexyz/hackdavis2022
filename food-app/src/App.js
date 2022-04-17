@@ -1,9 +1,13 @@
 import React from 'react'; 
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 import './App.css';
 import Navbar from './components/Navbar';
-import Recipe from './components/Recipe';
+import RecipeTile from './components/RecipeTile';
 import Home from './Home';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Recipe  from './classes/Recipe';
+
+const r = Recipe('chicken', 'is chicken', ['chicken'], ['cook chicken', 'done']);
 
 
 function App() {
