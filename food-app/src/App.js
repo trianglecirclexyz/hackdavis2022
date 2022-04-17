@@ -1,16 +1,20 @@
 import React from 'react'; 
 import './App.css';
-import Navbar from './components/Navbar';
 import Recipe from './components/Recipe';
+import Topmenu from './components/Topmenu';
 import Home from './Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.css'
+
 
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        <Topmenu />
+
+        <Recipe title="Salami" />
         <div className="content">
             <Switch>
               <Route path="/">
