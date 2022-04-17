@@ -1,5 +1,6 @@
 import React from 'react'; 
 import './App.css';
+import Navbar from './components/Navbar';
 import Recipe from './components/Recipe';
 import Home from './Home';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -9,9 +10,12 @@ function App() {
   return (
     <Router>
       <div className="App">
-          <Route path="/">
-            <Home />
-          </Route>
+        <Navbar />
+        <div className="content">
+            <Route path="/">
+              <Home />
+            </Route>
+        </div>`
       </div>
     </Router>
   );
