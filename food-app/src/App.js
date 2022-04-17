@@ -8,6 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <Router>
+      <Recipe title='Tikka Malsala' />
       <div className="App">
           <Route path="/">
             <Home />
