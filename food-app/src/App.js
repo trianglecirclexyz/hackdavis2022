@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Recipe from './components/Recipe';
 import Home from './Home';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
 function App() {
@@ -12,13 +12,12 @@ function App() {
       <div className="App">
         <Navbar />
         <div className="content">
-            <Route path="/">
-              <Routes>
-                <Recipe title='Tikka Malsala' />
+            <Switch>
+              <Route path="/">
                 <Home />
-              </Routes>
-            </Route>
-        </div>`
+              </Route>
+            </Switch>
+        </div>
       </div>
     </Router>
   );
