@@ -1,11 +1,14 @@
 import React from 'react'; 
-import './App.css';
-import Recipe from './components/Recipe';
-import Topmenu from './components/Topmenu';
-import Home from './Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.css'
 
+import './App.css';
+import Topmenu from './components/Topmenu';
+import 'bootstrap/dist/css/bootstrap.css'
+import RecipeTile from './components/RecipeTile';
+import Home from './Home';
+import Recipe  from './classes/Recipe';
+
+const r = Recipe('chicken', 'is chicken', ['chicken'], ['cook chicken', 'done']);
 
 
 function App() {

@@ -1,4 +1,6 @@
-function Recipe (props) {
+
+
+function RecipeTile (props) {
     return (
         <div className="card">
             <h1>{props.title}</h1>
@@ -6,4 +8,4 @@ function Recipe (props) {
     );
 }
 
-export default Recipe;
+export default RecipeTile;
