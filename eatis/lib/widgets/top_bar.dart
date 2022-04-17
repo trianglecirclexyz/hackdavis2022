@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class NavigationBar extends StatelessWidget {
-  const NavigationBar({Key? key}) : super(key: key);
+class TopBar extends StatelessWidget {
+  const TopBar({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,11 +16,7 @@ class NavigationBar extends StatelessWidget {
           ),
           Row(
             mainAxisSize: MainAxisSize.min,
-            children: const <Widget>[
-              _NavBarItem('Episodes'),
-              SizedBox(width: 60),
-              _NavBarItem('About')
-            ],
+            children: <Widget>[SizedBox(width: 60), _TopBarItem('About')],
           )
         ],
       ),
@@ -28,9 +24,9 @@ class NavigationBar extends StatelessWidget {
   }
 }
 
-class _NavBarItem extends StatelessWidget {
+class _TopBarItem extends StatelessWidget {
   final String title;
-  const _NavBarItem(this.title);
+  const _TopBarItem(this.title);
 
   @override
   Widget build(BuildContext context) {
